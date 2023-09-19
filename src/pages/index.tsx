@@ -11,7 +11,6 @@ export default function App() {
   const [page, setPage] = useState({ name: 'home' })
 
   function setPages(name: string) {
-    console.log(name)
     setPage({ name: name })
   }
 
@@ -21,7 +20,7 @@ export default function App() {
         <title>Carlos Dantas Portfolio</title>
       </Head>
       <Header setPage={setPages} page={page.name} />
-      <main className="w-full h-screen py-9 px-[113px]">
+      <main className="w-full h-screen py-5 px-5 md:py-9 md:px-[113px]">
         {page.name === 'home' && (
           <Home />
         )}

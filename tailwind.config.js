@@ -22,7 +22,12 @@ module.exports = {
         textComment: '#607B96',
         githubLink: '#43D9AD',
         link: '#E99287',
-        curriculum: '#3BBF98'
+        curriculum: '#3BBF98',
+        contactClass: '#7000FF',
+        emailPhone: '#0EE6B7',
+        emailPhoneLink: '#e99287',
+        programming: '#607B96',
+        contactBorder: '#1E2D3D'
       }
     },
   },

@@ -11,6 +11,6 @@ export default function Home() {
       <span className="text-githubLink">{` githublink`}</span> =
       <a className="text-link" href="https://github.com/carllos95"> https://github.com/carllos95</a>
     </h2>
-    <button className="px-5 py-3 rounded-full border-2 border-curriculum">curriculum</button>
+    <button className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</button>
   </div>
 }
