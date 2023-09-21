@@ -1,10 +1,10 @@
 export default function Home() {
-  function handleDownloadPdf() {
-    const pdfLink = document.createElement('a');
-    pdfLink.href = '/curriculum/carlos-dantas.pdf';
-    pdfLink.download = 'carlos-dantas.pdf';
-    pdfLink.click()
-  }
+  // function handleDownloadPdf() {
+  //   const pdfLink = document.createElement('a');
+  //   pdfLink.href = '/curriculum/carlos-dantas.pdf';
+  //   pdfLink.download = 'carlos-dantas.pdf';
+  //   pdfLink.click()
+  // }
 
   return <div className="mt-10 flex justify-between flex-col lg:flex-row">
     <div className="w-full lg:w-[47%] mb-8 lg:mb-0">
@@ -19,7 +19,7 @@ export default function Home() {
         <span className="text-githubLink">{` githublink`}</span> =
         <a className="text-link" href="https://github.com/carllos95"> https://github.com/carllos95</a>
       </h2>
-      <button onClick={() => handleDownloadPdf()} className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</button>
+      <a href="/curriculum/carlos-dantas.pdf" download className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</a>
     </div>
     <div className="w-full lg:w-[50%]">
       <p className="mb-12">About me</p>
