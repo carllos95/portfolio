@@ -1,6 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
+  trailingSlash: true,
+  swcMinify: true,
+  rewrites: async () => {
+    return [
+      {
+        source: '/api/curriculo',
+        destination: '/api/curriculo',
+      }
+    ]
+  }
 }
-
-module.exports = nextConfig
