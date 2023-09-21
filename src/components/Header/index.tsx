@@ -20,9 +20,9 @@ export default function Header({ setPage, page }: HeaderProps) {
             <li className="px-5 py-1 border-borderBottom flex">
               <button className={`${page === 'home' ? 'text-textActive' : 'text-textMenu'}`} onClick={() => setPage('home')}>_hello</button>
             </li>
-            <li className="px-5 py-1 border-borderBottom  flex">
+            {/* <li className="px-5 py-1 border-borderBottom  flex">
               <button className={`${page === 'about' ? 'text-textActive' : 'text-textMenu'}`} onClick={() => setPage('about')}>_about-me</button>
-            </li>
+            </li> */}
             <li className="px-5 py-1 border-borderBottom  flex">
               <button className={`${page === 'skills' ? 'text-textActive' : 'text-textMenu'}`} onClick={() => setPage('skills')}>_skills</button>
             </li>
@@ -40,9 +40,9 @@ export default function Header({ setPage, page }: HeaderProps) {
         <li className="px-5 border-r-2 border-borderBottom flex">
           <button className={`${page === 'home' ? 'text-textActive' : 'text-textMenu'}`} onClick={() => setPage('home')}>_hello</button>
         </li>
-        <li className="px-5 border-borderBottom border-r-2 flex">
+        {/* <li className="px-5 border-borderBottom border-r-2 flex">
           <button className={`${page === 'about' ? 'text-textActive' : 'text-textMenu'}`} onClick={() => setPage('about')}>_about-me</button>
-        </li>
+        </li> */}
         <li className="px-5 border-borderBottom border-r-2 flex">
           <button className={`${page === 'skills' ? 'text-textActive' : 'text-textMenu'}`} onClick={() => setPage('skills')}>_skills</button>
         </li>
