@@ -11,9 +11,9 @@ export default function Home() {
       <h2 className="text-lg mb-7">
         <span className="text-textDeveloper">{`const`}</span>
         <span className="text-githubLink">{` githublink`}</span> =
-        <a className="text-link" href="https://github.com/carllos95"> https://github.com/carllos95</a>
+        <a className="text-link" href="https://github.com/carllos95" target="_blank"> https://github.com/carllos95</a>
       </h2>
-      <a href="/api/curriculo" className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</a>
+      <a href="/api/curriculo" download className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</a>
     </div>
     <div className="w-full lg:w-[50%]">
       <p className="mb-12">About me</p>
