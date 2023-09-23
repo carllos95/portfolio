@@ -1,7 +1,17 @@
-import axios from "axios"
-
 /* eslint-disable @next/next/no-html-link-for-pages */
 export default function Home() {
+  const curriculumPath = '/carlos-dantas.pdf'
+
+  const downloadFile = (url: string) => {
+    const fileName = url.split('/').pop()
+    const aTag = document.createElement('a')
+    aTag.href = url
+    aTag.setAttribute('download', fileName ? fileName : '')
+    document.body.appendChild(aTag)
+    aTag.click()
+    aTag.remove()
+  }
+
   return <div className="mt-10 flex justify-between flex-col lg:flex-row">
     <div className="w-full lg:w-[47%] mb-8 lg:mb-0">
       <p className="mb-12">Hi all, I&apos;m</p>
@@ -15,7 +25,7 @@ export default function Home() {
         <span className="text-githubLink">{` githublink`}</span> =
         <a className="text-link" href="https://github.com/carllos95" target="_blank"> https://github.com/carllos95</a>
       </h2>
-      <a href="https://carllos95.github.io/portfolio/api/curriculo" download className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</a>
+      <button onClick={() => downloadFile(curriculumPath)} className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</button>
     </div>
     <div className="w-full lg:w-[50%]">
       <p className="mb-12">About me</p>
