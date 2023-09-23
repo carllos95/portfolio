@@ -1,3 +1,5 @@
+import axios from "axios"
+
 /* eslint-disable @next/next/no-html-link-for-pages */
 export default function Home() {
   return <div className="mt-10 flex justify-between flex-col lg:flex-row">
@@ -13,7 +15,7 @@ export default function Home() {
         <span className="text-githubLink">{` githublink`}</span> =
         <a className="text-link" href="https://github.com/carllos95" target="_blank"> https://github.com/carllos95</a>
       </h2>
-      <a href="/api/curriculo" download className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</a>
+      <a href="/carlos-dantas.pdf" download className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</a>
     </div>
     <div className="w-full lg:w-[50%]">
       <p className="mb-12">About me</p>
