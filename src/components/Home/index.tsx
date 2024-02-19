@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
+
 export default function Home() {
   const curriculumPath = '/carlos-dantas.pdf'
-
   const downloadFile = (url: string) => {
     const fileName = url.split('/').pop()
     const aTag = document.createElement('a')
@@ -25,7 +25,7 @@ export default function Home() {
         <span className="text-githubLink">{` githublink`}</span> =
         <a className="text-link" href="https://github.com/carllos95" target="_blank"> https://github.com/carllos95</a>
       </h2>
-      <button onClick={() => downloadFile(curriculumPath)} className="px-5 py-3 rounded-full border-2 border-curriculum">Curriculum</button>
+      <a href="https://drive.google.com/file/d/1X-7VWQQMX8aPPtOpgmzaZdmdz2CCeIYi/view?usp=drive_link" className="px-5 py-3 rounded-full border-2 border-curriculum" target="_blank">Curriculum</a>
     </div>
     <div className="w-full lg:w-[50%]">
       <p className="mb-12">About me</p>
